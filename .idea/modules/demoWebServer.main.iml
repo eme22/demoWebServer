@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="FacetManager">
+    <facet type="web" name="Web Gradle : demoWebServer-1.0-SNAPSHOT.war">
+      <facet type="webservices" name="WebServices">
+        <configuration />
+      </facet>
+    </facet>
+  </component>
+</module>
