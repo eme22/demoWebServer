@@ -21,8 +21,8 @@
                 var wsUrl = "http://localhost:8080/demoWebServer-1.0-SNAPSHOT/usuario?wsdl";
                 var usr=$('#email').val();
                 var pss=$('#psw').val();
-                console.log("Usuario: " + usr);
-                console.log("Contrasenia: " + pss);
+                //console.log("Usuario: " + usr);
+                //console.log("Contrasenia: " + pss);
                 var soapRequest =
                     "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:dem=\"http://demoWebServer.eme22.com/\">" +
                         "<soapenv:Header/>" +
@@ -76,7 +76,7 @@
         }
 
         function loginsucess(usr) {
-            console.log("SUCCESS");
+            //console.log("SUCCESS");
             var userid = btoa(usr);
             window.location = generateUrl("http://localhost:8080/demoWebServer-1.0-SNAPSHOT/usuario.jsp",{
                 sessioncode: userid
@@ -84,7 +84,7 @@
         }
 
         function loginerror() {
-            console.log("ERROR");
+            //console.log("ERROR");
             $("#nouseralert").removeClass('d-none');
         }
 

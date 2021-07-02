@@ -74,7 +74,7 @@
                     var nombre = $(this).find('nombre').text();
                     var usuario = $(this).find('usuario').text();
 
-                    console.log(id);
+                    //console.log(id);
 
                     $("#userstable").find('tbody').append(
                         "<tr>" +
@@ -117,11 +117,11 @@
     }
 
     function usersucess(data, status, req) {
-        console.log("sucess user");
+        //console.log("sucess user");
         var response = req.responseXML;
         var usrnm = response.getElementsByTagName("nombre")[0].textContent
         myid = response.getElementsByTagName("id")[0].textContent
-        console.log(usrnm);
+        //console.log(usrnm);
         document.getElementById("username").innerHTML=usrnm;
         document.getElementById("username2").innerHTML=usrnm;
         loadlist();
@@ -129,7 +129,7 @@
     }
 
     function showrow(string) {
-        console.log(string);
+        //console.log(string);
         document.getElementById("pw@"+string).classList.toggle("hidetext");
 
     }
@@ -189,9 +189,9 @@
                         var nombre = $(this).find('nombre').text();
                         var usuario = $(this).find('usuario').text();
 
-                        console.log(usuario);
-                        console.log(nombre);
-                        console.log(contrasenia);
+                        //console.log(usuario);
+                        //console.log(nombre);
+                        //console.log(contrasenia);
 
                         $("#exampleInputEmail1").val(usuario);
                         $("#exampleInputName1").val(nombre);
@@ -238,7 +238,7 @@
                     var nombre = $(this).find('nombre').text();
                     var usuario = $(this).find('usuario').text();
 
-                    console.log(id);
+                    //console.log(id);
 
                     $("#userstable").find('tbody').append(
                         "<tr>" +
